@@ -1,0 +1,9 @@
+{
+  "todos": [
+    {
+      "id": "bc8c572c-8ad6-493e-b9ae-58f6f9e8d292",
+      "text": "Learn React",
+      "completed": false
+    }
+  ]
+}
