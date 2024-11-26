@@ -21,7 +21,7 @@ const App = () => {
         <div className="col-md-6 mt-5">
           <div className="card shadow">
             <div className={`card-body ${theme === "dark" ? "bg-secondary text-white" : "bg-light text-dark"}`}>
-              <h1 className="card-title text-center mb-4">{langText[lang].title}</h1>
+              <h1 cy-data="todo-title" className="card-title text-center mb-4">{langText[lang].title}</h1>
               <TodoInput />
               <TodoList />
             </div>

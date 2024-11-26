@@ -44,7 +44,7 @@ const TodoList = () => {
   }
 
   if (todos.length === 0) {
-    return <p className="alert alert-secondary text-center">{langText[lang].noTasks}</p>;
+    return <p cy-data="no-task" className="alert alert-secondary text-center">{langText[lang].noTasks}</p>;
   }
 
   return (
@@ -68,6 +68,7 @@ const TodoList = () => {
 
           <div className="d-flex gap-2">
             <button
+              cy-data="edit-button"
               onClick={(e) => handleEditClick(e, todo)}
               className="btn btn-warning btn-sm"
             >
@@ -75,6 +76,7 @@ const TodoList = () => {
             </button>
 
             <button
+              cy-data="delete-button"
               className="btn btn-danger btn-sm"
               onClick={(e) => {
                 e.stopPropagation();

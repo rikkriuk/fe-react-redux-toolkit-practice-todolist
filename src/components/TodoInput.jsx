@@ -58,12 +58,14 @@ const TodoInput = () => {
     <div className="mb-3">
       <div className="d-flex gap-3 mb-3">
         <button 
+          cy-data="lang-button"
           onClick={() => dispatch(updateLang({ lang: lang === "en" ? "id" : "en" }))}
           className="btn btn-success border"
         >
           {langText[lang].langSwitch}
         </button>
         <button 
+          cy-data="theme-button"
           onClick={() => dispatch(setTheme(theme === "light" ? "dark" : "light"))}
           className={`btn ${theme === "dark" ? "bg-light text-dark" : "btn-secondary text-light"}`}
         >
@@ -74,12 +76,14 @@ const TodoInput = () => {
         <input
           type="text"
           className="form-control"
+          cy-data="input-form"
           placeholder={langText[lang].placeholder}
           value={text}
           onChange={(e) => setText(e.target.value)}
           required
         />
         <button
+          cy-data="input-button"
           className={`btn ${isUpdated ? "btn-warning" : "btn-primary"}`}
           type="submit"
         >
