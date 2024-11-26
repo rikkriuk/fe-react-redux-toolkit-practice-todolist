@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.vercel.fe_react_redux_toolkit_practice_todolist.twa",
+        "sha256_cert_fingerprints": ["8C:0D:0C:47:97:A5:1A:B7:D0:6C:D3:14:EB:B9:FE:7C:C6:10:4F:06:50:81:6E:6F:84:B5:57:8F:80:64:98:3C"]
+      }
+    }]
